@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BalanceTrack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>BalanceTrack</h1>
+        <p>Income & Expense Tracker</p>
+
+        <div class="nav">
+            <a href="#dashboard">Dashboard</a>
+            <a href="#transactions">Transactions</a>
+            <a href="#reports">Goals & Reports</a>
+        </div>
+
+        <hr>
+
+        <div id="dashboard">
+            <h2>Dashboard</h2>
+
+            <p><strong>Current Balance:</strong> $2,450.00</p>
+            <p><strong>Total Income:</strong> $3,200.00</p>
+            <p><strong>Total Expenses:</strong> $750.00</p>
+            <p><strong>Net Gain/Loss:</strong> +$2,450.00</p>
+
+            <h3>Financial Goal</h3>
+            <p>Goal: $5,000</p>
+            <p>Current Progress: $2,450</p>
+            <p>49% complete</p>
+
+            <h3>Recent Activity</h3>
+
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>10/08/2026</td>
+                    <td>Paycheck</td>
+                    <td>Income</td>
+                    <td>$1,600.00</td>
+                </tr>
+                <tr>
+                    <td>10/09/2026</td>
+                    <td>Groceries</td>
+                    <td>Expense</td>
+                    <td>$120.00</td>
+                </tr>
+                <tr>
+                    <td>10/10/2026</td>
+                    <td>Gas</td>
+                    <td>Expense</td>
+                    <td>$55.00</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <div id="transactions">
+            <h2>Transactions</h2>
+
+            <h3>Add Transaction</h3>
+
+            <form>
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+
+                <label for="description">Description:</label>
+                <input type="text" id="description">
+
+                <label for="type">Type:</label>
+                <select id="type">
+                    <option>Income</option>
+                    <option>Expense</option>
+                </select>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount">
+
+                <button type="button">Add Transaction</button>
+            </form>
+
+            <h3>Transaction History</h3>
+
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>10/08/2026</td>
+                    <td>Paycheck</td>
+                    <td>Income</td>
+                    <td>$1,600.00</td>
+                    <td>
+                        <button type="button">Edit</button>
+                        <button type="button">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10/09/2026</td>
+                    <td>Groceries</td>
+                    <td>Expense</td>
+                    <td>$120.00</td>
+                    <td>
+                        <button type="button">Edit</button>
+                        <button type="button">Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <div id="reports">
+            <h2>Goals & Reports</h2>
+
+            <h3>Set Financial Goal</h3>
+
+            <form>
+                <label for="goal">Goal Amount:</label>
+                <input type="number" id="goal">
+
+                <button type="button">Set Goal</button>
+            </form>
+
+            <p><strong>Current Goal:</strong> $5,000</p>
+            <p><strong>Current Progress:</strong> $2,450</p>
+
+            <h3>Monthly Summary</h3>
+
+            <p>Total Income: $3,200.00</p>
+            <p>Total Expenses: $750.00</p>
+            <p>Net Gain/Loss: +$2,450.00</p>
+
+            <h3>Balance Over Time</h3>
+
+            <table>
+                <tr>
+                    <th>Month</th>
+                    <th>Ending Balance</th>
+                </tr>
+                <tr>
+                    <td>August</td>
+                    <td>$1,250.00</td>
+                </tr>
+                <tr>
+                    <td>September</td>
+                    <td>$1,900.00</td>
+                </tr>
+                <tr>
+                    <td>October</td>
+                    <td>$2,450.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
